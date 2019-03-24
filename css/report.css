@@ -1,0 +1,87 @@
+article{
+	width: 90%;
+	text-align: center;
+}
+#time_range_select{
+	background-image: url(../img/icon/calendar.png);
+	background-position: 7%;
+	background-size: 4.8%;
+	background-repeat: no-repeat;
+	position: relative;
+	/*top: 5vh;*/
+	margin-bottom: 3%;
+	text-align: center;
+	width: 40%;
+	height: 30px;
+	line-height:30px;
+	font-size: 16px;
+	font-family: "微軟正黑體";
+	color: #AAA;
+	background-color: #FFF;
+	border-radius: 10px;
+	border: 2px solid #AAA;
+}
+section{
+	position: relative;
+	top: 50px;
+	left:0;
+	width: 100%;
+	height: 100px;
+	background-color: #FFF;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+section div{
+	background-color: #AAA
+	width: 20%;
+}
+section div:hover{
+	color: #77b2ff;
+	transition: 0.2s;
+}
+#report_1,#report_2,#report_3{
+	cursor: pointer;
+	background-color: #FFF;
+	width: 55px;
+	height: 60px;
+	margin-left: 42px;
+	margin-right: 42px;
+	background-repeat: no-repeat;
+	background-size: 50px;
+	background-position: center 1px;
+	text-align: center;
+}
+#report_1{
+	background-image: url(../img/icon/warning.png);
+	 /*background-position: center 3px;*/
+}
+#report_2{
+	background-image: url(../img/icon/speedometer.png);	
+	background-size: 50px;
+	width: 75px;
+	height: 55px;
+	background-position: center -4px;
+}
+#report_3{
+	background-image: url(../img/icon/celsius.png);
+}
+#report_2 a{
+	position: relative;
+	display: inline-flex;
+	top: 48px;
+	font-size: 10px;
+	font-weight: bolder;
+	text-align: center;
+}
+#report_1 a,#report_3 a{
+	position: relative;
+	display: inline-flex;
+	top: 50px;
+	font-size: 10px;
+	font-weight: bolder;
+	text-align: center;
+}
+.report_point{
+	color: #77b2ff;
+}

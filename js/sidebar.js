@@ -1,0 +1,31 @@
+$(document).ready(function(){
+	$('#immediate').hover(function(){
+		$('#click_immediate').css('background-color','#008ff8');
+	});
+});
+$(document).ready(function(){
+	$('#search').hover(function(){
+		$('#click_search').css('background-color','#008ff8');
+		$('#click_search').css('transition','0.5s');
+		$('#search').css('transition','0.5s');
+	},function(){
+		$('#click_search').css('background-color','#FFF');
+		$('#search').css('border-color','#FFF');
+	});
+});
+$(document).ready(function(){
+	$('#problem').hover(function(){
+		$('#click_problem').css('background-color','#008ff8');
+		$('#click_problem').css('transition','0.5s');
+	},function(){
+		$('#click_problem').css('background-color','#FFF');
+	});
+});
+$(document).ready(function(){
+	$('#analysis').hover(function(){
+		$('#click_analysis').css('background-color','#008ff8');
+		$('#click_analysis').css('transition','0.5s');
+	},function(){
+		$('#click_analysis').css('background-color','#FFF');
+	});
+});

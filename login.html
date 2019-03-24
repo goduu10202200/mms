@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>華新麗華｜伸線機台管理系統</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/login.js"></script>
+	</head>
+	<body onload="onload_hr();createCode()">
+		<header>
+			<img src="img/logo.png">
+		</header>
+		<section>
+			<!--登入區塊-->
+			<form id="form1" action="MMS_Backside/Backside_login.php" method="post" runat="server" onsubmit="validateCode()">
+				<div class="login_box">
+					<div class="login_title">
+						<span class="login_titleC">伸線機台管理系統</span>	<br/>
+						<span class="login_titleE">Wire Drawing Machine Management System</span>
+						<hr/>
+					</div>
+					<div class="login_txt">
+						<span class="login_box_title">帳號</span>
+						<input type="text" id="ID"  name="account" title="請輸入帳號" placeholder="請輸入您的帳號"/>
+					</div>
+					<div class="login_txt">
+						<span class="login_box_title">密碼</span>
+						<input type="password" id="password" name="password" title="請輸入帳號" placeholder="請輸入您的密碼"/>
+					</div>
+
+					<!--驗證碼-->
+					<div id="checkCode_box">
+						<table>
+							<tr>
+								<td><div class="code" id="checkCode" onclick="createCode()"></div></td>
+								<td><input type="text" id="inputCode" placeholder="請輸入左側驗證碼"/></td>
+							</tr>
+						</table>
+					</div>
+					<div class="login_box_bottom">
+						<input type="submit" value="確定" class="login_btn">
+						<input type="button" value="重填" class="login_btn" >
+					</div>
+				</div>
+			</form>
+		</section>
+	</body>
+</html>

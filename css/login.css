@@ -1,0 +1,158 @@
+body{
+	background-color: #f2f2f2;
+	text-align: center;
+	font-size: 18px;
+	padding:0;
+	margin:0;
+}
+
+header, section{
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 30px;
+	width:90%;
+	text-align: center;
+	font-family: 'Microsoft JhengHei';
+}
+header{
+	padding-top: 20px;
+}
+
+input, a{
+	outline: none;
+	font-family: 'Microsoft JhengHei';
+}
+hr{
+	width: 0;
+}
+hr.hr_extend{
+	width: 90%;
+	transition: 1.5s;
+}
+
+/*登入輸入區塊*/
+.login_box{
+	width: 50%;
+	margin: auto;
+	margin-top: 10px;
+	padding: 30px 10px;
+	background-color: #fff;
+}
+/*系統名稱文字*/
+.login_title{
+	padding-bottom: 30px;
+}
+.login_titleC{
+	font-size: 26px;
+	color:	#173547;
+	text-align:center;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+.login_titleE{
+	font-size: 12px;
+	color:	#173547;
+	text-align:center;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+/* 通用 文字框預設文字*/
+::-webkit-input-placeholder { font-size: 12px; }
+::-moz-placeholder { font-size: 12px; } /* firefox 19+ */
+:-ms-input-placeholder { font-size: 12px; } /* ie */
+input:-moz-placeholder { font-size: 12px; }
+/*文字框*/
+.login_box .login_txt{
+	width: 100%;
+	padding-bottom: 20px;
+}
+.login_box .login_box_title{  /*帳密標題*/
+	margin-right: 15px;
+	line-height: 30px;
+}
+.login_box input[type="text"]{
+	position: relative;
+	width: 200px;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 3px; 
+	border: 1px solid #e0e0e0;
+}
+.login_box input[type="password"]{
+	width: 200px;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 3px; 
+	border: 1px solid #e0e0e0;
+}
+.login_box input[type="text"]:focus{
+	border: 1px solid #005d6d;
+    transition: 0.5s;
+}
+.login_box input[type="password"]:focus{
+	border: 1px solid #005d6d;
+    transition: 0.5s;
+}
+
+/*按鈕區塊*/
+.login_box_bottom{
+	margin-top: 10px;
+}
+/*按鈕樣式*/
+.login_btn{
+	cursor: pointer;
+	border: none;
+	padding:10px 20px;
+	background-color: #004770;
+	border-radius: 30px; 
+	color: white; 
+	font-size: 16px;
+	margin:10px;
+}
+.login_btn:hover{
+	background-color: #1f7fb7;
+}
+
+
+
+/*驗證碼*/
+#checkCode_box{
+	width: 100%;
+}
+#checkCode_box table{
+	min-width: 300px;
+	margin:auto;
+}
+#checkCode_box td{
+	padding: 10px;
+}
+#checkCode_box input[type="text"]{
+	width: 150px;
+}
+#checkCode_box .code{
+    background:url(../img/code_bg.jpg) 150px;
+    font-family:Arial;
+	font-style:italic;
+	color:gray;
+	font-size:26px;
+	border:2px solid gray;
+	padding:2px 3px;
+	letter-spacing:3px;
+	font-weight:bolder;             
+	float:left;            
+    cursor:pointer;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    vertical-align:middle;
+}
+#checkCode_box a{
+    text-decoration:none;
+    font-size:12px;
+    color:#288bc4;
+}
+#checkCode_box a:hover{
+   text-decoration:underline;
+}

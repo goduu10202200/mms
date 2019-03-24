@@ -1,0 +1,93 @@
+section{
+	text-align:center;
+}
+#input{
+	display: inline-block;
+	padding-bottom: 20px;
+	margin: 0 3%;
+	width: 40%;
+	/*height: 71vh;*/
+	border: 2px solid #dddddb;
+	border-top: none;
+	text-align: center;
+/*	background-color: #F8F8FF;*/
+}
+#output{
+	display: inline-block;
+	padding-bottom: 20px;
+	margin: 0 3%;
+	width: 40%;
+	/*height: 71vh;*/
+	border: 2px solid #dddddb;
+	border-top: none;
+	text-align: center;
+/*	background-color: #F8F8FF;*/
+}
+.title{
+	background-color: rgb(0,143,248);
+	height: 60px;
+	line-height: 60px;
+	/*border-bottom: 2px solid #dddddb;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.6vw;
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.triangle{
+	border-right: 20px solid white;
+	border-left: 20px solid white;
+	border-top: 20px solid rgb(0,143,248);
+	display:inline-block;
+}
+.input_content, .output_content{
+	display: block;
+	text-align: center;
+	height: 100%;
+}
+#speed_bar_input,#speed_bar_output{
+	font-family: 'Arial';
+    width:70%; 
+    height:200px;
+    display: inline-block;
+    border-radius: 8px;
+    /*align-items: center;*/
+}
+#speed_bar_input tspan,#speed_bar_output tspan{
+	font-family: 'Microsoft JhengHei';
+}
+.input_imformation, .output_imformation{
+	position: relative;
+	min-height: 100px;
+	font-size: 1.5vw;
+	display: flex;
+	align-items: center;
+}
+.input_imformation table, .output_imformation table{
+	width:80%;
+	color: #878787;
+	font-weight: bolder;
+	margin-top:10px;
+	border-spacing:8px;
+	line-height:30px;
+	font-size:16px;
+	line-height:40px;
+}
+.imformation_item{
+	width:35%;
+	text-align: left;
+}
+.imformation_data{
+	width:65%;
+	text-align: center;
+	background-color: rgb(0,182,240);
+	color: #FFF;
+	/*border: 1px solid #AAA;*/
+	border-radius: 20em;
+	width: 11vw;
+	font-weight: normal;
+	letter-spacing: 0.2vw;
+	font-size: 1vw;
+}

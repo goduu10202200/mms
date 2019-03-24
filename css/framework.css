@@ -1,0 +1,498 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	background-color: rgb(242,242,242);
+	font-family: "Microsoft JhengHei";
+}
+a, input{
+	outline: none;
+	text-decoration:none;
+}
+tspan, text, div, a, input{
+	font-family: "Microsoft JhengHei";
+}
+
+#sidebar_top{					/*左側sidebar上方華新LOGO與選單的區塊*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #0e314c;
+}
+.top_bar_menu{					/*折疊選單的圖案*/
+	cursor: pointer;
+	float: left;
+	width: 20px;
+	margin: 15px;
+}
+.top_bar_logo{					/*華新的LOGO*/
+	cursor: pointer;
+	float: right;
+	margin-top: 3px ;
+	margin-right:30px;
+	width: 90px;
+}
+#alarm_box{
+	text-align: center;
+}
+#alarm_box a{
+	color: #aaa;
+}
+#setting_box{
+	position: fixed;
+	padding: 5px;
+	/*width: 100px;*/
+	background-color: #AAA;
+	z-index: -12;
+	right: 1%;
+	top: 30px;
+	opacity: 0;
+	color: #FFF;
+	/*border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;*/
+	border-radius: 6px;
+	text-align: center;
+	display: block;
+	align-items: center;
+}
+#setting_box div{
+	margin: 0 auto;
+	padding: 0px;
+}
+#setting_box li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0 auto;
+	font-weight: bolder;
+	list-style: none;
+}
+#setting_box li input{
+	border-style: none;
+	border-radius: 3px;
+}
+/*#setting_box_triangle{
+	position: relative;
+	bottom: 27px;
+	right: 7px;
+	border-left: 10px solid #e8e8e8;
+	border-right: 10px solid #e8e8e8;
+	border-top: 10px solid #e8e8e8;
+	border-bottom: 10px solid #c7c7c7;
+	display:inline-block;
+}*/
+aside{					/*左側sidebar的區塊*/
+	position: fixed;
+	background-color: #0e314c;
+	box-shadow: 1px 0 5px  #AAAAAA;
+	color: #878787;
+	opacity: 0.9;
+	left: 0;
+	top: 0;
+	padding-top: 50px;
+	width: 180px;
+	height: 100%;
+	user-select: none;
+	z-index: 99;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.sidebar_title{			/*左側藍字標題*/
+	position: relative;
+	top: 5px;
+	left: 5px;
+	font-weight: bolder;
+	font-size: 14px;
+	color: #74b1ff;
+}
+.sidebar{				/*左側選項menu*/
+	list-style-type: none;
+	margin: 10px 0;
+	width: 180px;
+	padding: 0;
+	min-height: 340px;
+}
+.sidebar li{
+	position: relative;
+	cursor: pointer;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	/*margin-bottom: 20px;*/
+}
+/*hover出現藍左側*/
+/*.sidebar li:hover span.sidebar_hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 40px;
+	z-index: 5;
+	//background-color: #bcdff2;
+}*/
+.sidebar li:hover a{
+	color: #000 !important;
+	background-color: #fff;
+}
+.sidebar li a{
+	position: absolute;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	padding-left: 25px;
+	opacity: 0.4;
+}
+.sidebar li a.Currently_page{		/*目前頁面樣式*/
+	font-weight: bold;
+	opacity: 1;
+	color: #000 !important;
+	background-color: #fff;
+}
+.sidebar .sidebar_icon{
+	width: 20px;
+	height: 20px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.arrow{					/*sidebar裡每個選項旁箭頭*/
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+
+}
+
+/*sidebar底部區塊*/
+#sidebar_bottom{
+	position:absolute;
+	bottom:50px;
+	width: 100%;
+	min-height: 100px;
+	display: block;
+}
+#fw_LightBox {
+	width: 100%;
+	min-height: 100px;
+}
+#fw_LightBox #fw_LightBox_depiction{
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 70%;
+	margin: 10px auto;
+	padding: 5px;
+	background-color: #ffdf63;
+	border-radius: 30px;
+	color: #353535;
+}
+#fw_LightBox .fw_LightBox_div{
+	width: 90px;
+	height: 90px;
+	margin:auto;
+}
+/*底色*/
+#fw_LightBox .fw_LightBox_background{
+	width: 60px;
+	height: 60px;
+	background-color: #2b3b47;
+	padding: 15px;
+	border-radius: 10px;
+	-moz-box-shadow:0 5px rgba(20%,20%,40%,0.5);
+	-webkit-box-shadow:0 5px rgba(20%,20%,40%,0.5);
+	box-shadow: 0 5px rgba(20%,20%,40%,0.5);
+	position: relative;
+}
+#fw_LightBox .fw_LightBox_nail_1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 3px;
+	height: 3px;
+	margin: 5px;
+	border-radius: 50%;
+	background-color: #b7b7b7;
+	z-index: 2;
+}
+#fw_LightBox .fw_LightBox_nail_2{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 3px;
+	height: 3px;
+	margin: 5px;
+	border-radius: 50%;
+	background-color: #b7b7b7;
+	z-index: 2;
+}
+#fw_LightBox .fw_LightBox_nail_3{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 3px;
+	height: 3px;
+	margin: 5px;
+	border-radius: 50%;
+	background-color: #b7b7b7;
+	z-index: 2;
+}
+#fw_LightBox .fw_LightBox_nail_4{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 3px;
+	height: 3px;
+	margin: 5px;
+	border-radius: 50%;
+	background-color: #b7b7b7;
+	z-index: 2;
+}/*燈號顯示圓_綠色*/
+#fw_LightBox .fw_LightBox_circleG_before{
+	width: 60px;
+	height: 60px;
+	background-color: #00cca6;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   #fw_LightBox .fw_LightBox_circleG_after{
+	width: 60px;
+	height: 60px;
+	background-color: #009e83;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   /*燈號顯示圓_黃色*/
+   #fw_LightBox .fw_LightBox_circleY_before{
+	width: 60px;
+	height: 60px;
+	background-color: #ffde75;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   #fw_LightBox .fw_LightBox_circleY_after{
+	width: 60px;
+	height: 60px;
+	background-color: #FFC300;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   /*燈號顯示圓_紫色*/
+   #fw_LightBox .fw_LightBox_circleP_before{
+	width: 60px;
+	height: 60px;
+	background-color: #c07cff;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   #fw_LightBox .fw_LightBox_circleP_after{
+	width: 60px;
+	height: 60px;
+	background-color: #8a59b7;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   /*燈號顯示圓_紅色*/
+   #fw_LightBox .fw_LightBox_circleR_before{
+	width: 60px;
+	height: 60px;
+	background-color: #C70039;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+   #fw_LightBox .fw_LightBox_circleR_after{
+	width: 60px;
+	height: 60px;
+	background-color: #8c0028;
+	border-radius: 50%;
+	z-index: 3;
+	-moz-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	-webkit-box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+	box-shadow:inset 8px -8px rgba(40%,40%,40%,0.5);
+   }
+#sidebar_bottom #copyright{             /*左側最下方版權*/
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 10px;
+} 
+
+
+#notification{     /*右下角通知*/
+	 position: fixed;
+	 bottom: 3%;
+	 right: 2%;
+	 background-color: #b5b5b5;
+	 width: 100px;
+	 height: 100px;
+	 border-radius: 99em;
+	 z-index: 4;
+	 box-shadow: 1px 1px 30px #444;
+	 background-color: #ccc;
+	 background-image: url(../img/icon/notification_B.png);
+	 background-size: 50%;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 opacity: 0.5;
+	 transition: 0.5s;
+}
+#notification_box{
+	text-align: center;
+}
+/*右側內容區塊*/
+#content{				
+	position: fixed;
+	/*background-color: #DDDDDD;*/
+	/*top: 50px;*/
+	top: 0;
+	right: 0;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+/*左側上方標題*/
+#content header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #878787;
+}
+/*左側上方標題*/
+#content header #header_title{
+	float:right;
+	display:block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bolder;
+	margin-left:10px;
+	color: #878787;
+}
+/*首頁icon*/
+#content header #home{
+	line-height: 50px;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	margin-left: 20px;
+	margin-top: 8px;
+}
+/*首頁icon旁的斜線icon*/
+#content #divide{	
+	cursor: initial;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom:5px;
+	width: 15px;
+	height: 15px;
+	transform:rotate(10deg);
+	user-select: none;
+}
+/*頂端bar*/
+#top_bar{
+	position: fixed; 
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	z-index: 100;
+	user-select: none;
+}
+#top_bar>span{
+	position: fixed; 
+	background: #e8e8e8;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+#top_bar_right{				/*時間跟設定*/
+	position: fixed;
+	top: 0;
+	right: 0;
+	float: right;
+}
+#top_bar_right .top_bar_setting{
+	cursor: pointer;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 20px;
+	margin: 15px 30px;
+}
+#top_bar_right .top_bar_setting:hover{
+	width: 25px;
+	margin: 12.5px 27.5px;
+	transform: rotate(180deg);
+	transition: 0.5s;
+}
+#time{					/*上方bar即時時間*/
+	position: fixed;
+	top: 0;
+	right: 70px;
+	text-align: right;
+	height: 50px;
+	line-height: 50px;
+	color: #878787;
+	font-size: 14px;
+	font-weight: bolder;
+	font-family: "Microsoft JhengHei";
+	letter-spacing: 1px;
+}
+
+
+article{				/*非topbar也非sidebar的地方*/
+	position: relative;
+	top:50px;
+	margin: 30px auto;
+	width: 95%;
+	min-height: 507px;
+	padding: 30px 0;
+	display: block;
+	background-color: #FFF;
+	box-shadow: 0px 0px 17px #AAAAAA;
+	border-radius: 3px;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	
+
+
+
+}
